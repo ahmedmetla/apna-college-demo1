@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: "Poppins", sans-serif;
+    
+}
+body{
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.back{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    width: 300px;
+    height: 500px;
+    background-color:aqua;
+    margin-top: 40px;
+    padding: 20px;
+    border-radius: 15px;
+    position: relative;
+}
+.search {
+    display: flex;
+    margin-bottom: 20px;
+}
+.search input {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+}
+.search button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.weatherstatus {
+    text-align: center;
+    margin: 20px 0;
+}
+.weatherstatus img {
+    width: 100px;
+}
+#temp {
+    text-align: center;
+    font-size: 40px;
+    margin: 10px 0;
+}
+#city {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+.humidity, .wind {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+.humidity img, .wind img {
+    margin-right: 10px;
+}
+#dh, #dw {
+    margin-right: 5px;
+    font-size: 20px;
+}
+#th, #tw {
+    font-size: 16px;
+}

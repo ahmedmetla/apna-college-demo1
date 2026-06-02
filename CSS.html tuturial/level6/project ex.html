@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Superhero Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: gray;
+        }
+        .nav {
+            height: 15vh;
+            color: aliceblue;
+            background-color: black;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: 2px solid white;
+        }
+        .nav img {
+            width: 50px;
+            height: 50px;
+            border: 2px solid;
+            border-radius: 50px;
+            margin-left: 30px;
+        }
+        ul {
+            list-style: none;
+            display: flex;
+            margin-right: 10px;
+        }
+        li {
+            margin-right: 30px;
+        }
+        .main1 {
+            height: 50vh;
+            border: 2px solid black;
+            background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/189c896a-67cc-48d7-abb9-8164b0882b4f/d74defx-1abdcd34-52ec-406f-b8b4-8d96358ec6f7.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzE4OWM4OTZhLTY3Y2MtNDhkNy1hYmI5LTgxNjRiMDg4MmI0ZlwvZDc0ZGVmeC0xYWJkY2QzNC01MmVjLTQwNmYtYjhiNC04ZDk2MzU4ZWM2ZjcucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.ti4JHedFn3lf7Go6yOmmWMqLcd_IY11-d6weNrSWULc);
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: #000;
+        }
+        .m2 {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border: 2px solid white;
+            height: 45vh;
+            padding: 20px;
+        }
+        .box {
+            width: 200px;
+            height: 120px;
+            border: 2px solid black;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            padding: 0; /* Remove any padding */
+        }
+        .box img {
+            width: 100%;
+            height:100%;
+            object-fit: cover; /* Change from 'contain' to 'cover' */
+            display: block; /* Remove extra space below image */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <img src="logo.jpeg" alt="logo">
+            <ul>
+                <li>home</li>
+                <li>contant</li>
+                <li>about</li>
+                <li> contact</li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="main1"></div>
+        <div class="m2">
+            <div class="box bo1">
+                <img src="thus.jpg" alt="Thor">
+            </div>
+            <div class="box box2">
+                <img src="ca.avif" alt="Captain America">
+            </div>
+            <div class="box box3">
+                <img src="hulk.jpg" alt="Hulk">
+            </div>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Pulse Border</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #0a0a0a;
+            overflow: hidden;
+        }
+        
+        .card {
+            position: relative;
+            width: 300px;
+            height: 400px;
+            background: #111;
+            border-radius: 10px;
+            padding: 20px;
+            color: white;
+            font-family: 'Arial', sans-serif;
+           z-index: 8;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: conic-gradient(
+                transparent, 
+                #0ff,
+                transparent,
+                #f0f,
+                transparent,
+                #0f0,
+                transparent
+            );
+            animation: rotate 4s linear infinite;
+            z-index: -1;
+        }
+        
+        .card::after {
+            content: '';
+            position: absolute;
+            inset: 3px;
+            background: #111;
+            border-radius: 8px;
+            z-index: -1;
+        }
+        
+        @keyframes rotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .card-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        h1 {
+            color: #0ff;
+            text-shadow: 0 0 10px #0ff;
+        }
+        
+        p {
+            color: #aaa;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="card-content">
+            <h1>anus ali</h1>
+            <p>Wishing you a day filled with love, laughter, and all the joy you bring to others! May this year bless you with success, happiness, and unforgettable memories. You deserve the world and more—enjoy every moment! Stay amazing, and keep shining bright! 🌟💖</p>
+        </div>
+    </div>
+</body>
+</html>
+
+

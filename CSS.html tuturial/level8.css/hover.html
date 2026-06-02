@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        .box{
+            width: 80vw;
+            height: 20vh;
+            background-color: aqua;
+            margin: auto;
+            transition-property: width height;
+            transition-duration: 3s;
+            transform-style: calc(rgb(41, 41, 88));
+          
+          display:flex;
+        justify-content: center;
+        align-items: center;
+
+        }
+        .box:hover{
+            width: 90vw;
+            height: 20vh;
+            animation: colorChange 5s infinite alternate; ;
+           
+        }
+            @keyframes colorChange {
+            0% { background-color: #00FFFF; }  /* Aqua */
+            20% { background-color: #FF5733; } /* Red-Orange */
+            40% { background-color: #33FF57; } /* Green */
+            60% { background-color: #3357FF; } /* Blue */
+            80% { background-color: #F033FF; } /* Purple */
+            100% { background-color: #00FFFF; } /* Back to Aqua */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">Noman shaikh</div>
+</body>
+</html>
